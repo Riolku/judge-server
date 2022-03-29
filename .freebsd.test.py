@@ -30,6 +30,7 @@ OVERRIDES = {}
 
 
 def main():
+    judgeenv.env['compiler_time_limit'] = 20
     judgeenv.env['runtime'] = {}
     judgeenv.env['extra_fs'] = {
         'PERL': [{'exact_file': '/dev/dtrace/helper'}],
